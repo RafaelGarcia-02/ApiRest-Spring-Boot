@@ -45,6 +45,7 @@ public class ReparacionController {
     @PostMapping("/add")
     public ResponseEntity<Reparacion> add(@RequestBody ReparacionDto dto){
         return ResponseEntity.ok(service.add(dto));
+        
     }
     @DeleteMapping("/delete{id}")
     public ResponseEntity<?> delete(@PathVariable int id){
